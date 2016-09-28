@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.AddPanel = new System.Windows.Forms.Panel();
-            this.NameLabel = new System.Windows.Forms.Label();
-            this.NameTextBox = new System.Windows.Forms.TextBox();
-            this.PositionLabel = new System.Windows.Forms.Label();
-            this.AgeLabel = new System.Windows.Forms.Label();
-            this.PositionComboBox = new System.Windows.Forms.ComboBox();
-            this.AgeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.OkButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.OkButton = new System.Windows.Forms.Button();
+            this.AgeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.PositionComboBox = new System.Windows.Forms.ComboBox();
+            this.AgeLabel = new System.Windows.Forms.Label();
+            this.PositionLabel = new System.Windows.Forms.Label();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.AddPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeNumericUpDown)).BeginInit();
             this.SuspendLayout();
@@ -56,23 +56,56 @@
             this.AddPanel.Size = new System.Drawing.Size(497, 354);
             this.AddPanel.TabIndex = 0;
             // 
-            // NameLabel
+            // CancelButton
             // 
-            this.NameLabel.AutoSize = true;
-            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameLabel.Location = new System.Drawing.Point(18, 34);
-            this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(64, 25);
-            this.NameLabel.TabIndex = 0;
-            this.NameLabel.Text = "Name";
-            this.NameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.CancelButton.Location = new System.Drawing.Point(345, 310);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(75, 23);
+            this.CancelButton.TabIndex = 9;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
             // 
-            // NameTextBox
+            // OkButton
             // 
-            this.NameTextBox.Location = new System.Drawing.Point(202, 34);
-            this.NameTextBox.Name = "NameTextBox";
-            this.NameTextBox.Size = new System.Drawing.Size(219, 22);
-            this.NameTextBox.TabIndex = 1;
+            this.OkButton.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.OkButton.Location = new System.Drawing.Point(23, 310);
+            this.OkButton.Name = "OkButton";
+            this.OkButton.Size = new System.Drawing.Size(75, 23);
+            this.OkButton.TabIndex = 8;
+            this.OkButton.Text = "Ok";
+            this.OkButton.UseVisualStyleBackColor = true;
+            // 
+            // AgeNumericUpDown
+            // 
+            this.AgeNumericUpDown.Location = new System.Drawing.Point(202, 179);
+            this.AgeNumericUpDown.Name = "AgeNumericUpDown";
+            this.AgeNumericUpDown.Size = new System.Drawing.Size(219, 22);
+            this.AgeNumericUpDown.TabIndex = 7;
+            // 
+            // PositionComboBox
+            // 
+            this.PositionComboBox.FormattingEnabled = true;
+            this.PositionComboBox.Items.AddRange(new object[] {
+            "Нападающий",
+            "Полузащитник",
+            "Защитник",
+            "Вратарь"});
+            this.PositionComboBox.Location = new System.Drawing.Point(202, 105);
+            this.PositionComboBox.Name = "PositionComboBox";
+            this.PositionComboBox.Size = new System.Drawing.Size(219, 24);
+            this.PositionComboBox.TabIndex = 6;
+            // 
+            // AgeLabel
+            // 
+            this.AgeLabel.AutoSize = true;
+            this.AgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AgeLabel.Location = new System.Drawing.Point(23, 177);
+            this.AgeLabel.Name = "AgeLabel";
+            this.AgeLabel.Size = new System.Drawing.Size(48, 25);
+            this.AgeLabel.TabIndex = 4;
+            this.AgeLabel.Text = "Age";
+            this.AgeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // PositionLabel
             // 
@@ -86,51 +119,23 @@
             this.PositionLabel.Text = "Position\r\n";
             this.PositionLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // AgeLabel
+            // NameTextBox
             // 
-            this.AgeLabel.AutoSize = true;
-            this.AgeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AgeLabel.Location = new System.Drawing.Point(23, 177);
-            this.AgeLabel.Name = "AgeLabel";
-            this.AgeLabel.Size = new System.Drawing.Size(48, 25);
-            this.AgeLabel.TabIndex = 4;
-            this.AgeLabel.Text = "Age";
-            this.AgeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.NameTextBox.Location = new System.Drawing.Point(202, 34);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(219, 22);
+            this.NameTextBox.TabIndex = 1;
             // 
-            // PositionComboBox
+            // NameLabel
             // 
-            this.PositionComboBox.FormattingEnabled = true;
-            this.PositionComboBox.Location = new System.Drawing.Point(202, 105);
-            this.PositionComboBox.Name = "PositionComboBox";
-            this.PositionComboBox.Size = new System.Drawing.Size(219, 24);
-            this.PositionComboBox.TabIndex = 6;
-            // 
-            // AgeNumericUpDown
-            // 
-            this.AgeNumericUpDown.Location = new System.Drawing.Point(202, 179);
-            this.AgeNumericUpDown.Name = "AgeNumericUpDown";
-            this.AgeNumericUpDown.Size = new System.Drawing.Size(219, 22);
-            this.AgeNumericUpDown.TabIndex = 7;
-            // 
-            // OkButton
-            // 
-            this.OkButton.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.OkButton.Location = new System.Drawing.Point(23, 310);
-            this.OkButton.Name = "OkButton";
-            this.OkButton.Size = new System.Drawing.Size(75, 23);
-            this.OkButton.TabIndex = 8;
-            this.OkButton.Text = "Ok";
-            this.OkButton.UseVisualStyleBackColor = true;
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelButton.Location = new System.Drawing.Point(345, 310);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(75, 23);
-            this.CancelButton.TabIndex = 9;
-            this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NameLabel.Location = new System.Drawing.Point(18, 34);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(64, 25);
+            this.NameLabel.TabIndex = 0;
+            this.NameLabel.Text = "Name";
+            this.NameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AddPlayer
             // 
@@ -152,11 +157,11 @@
         private System.Windows.Forms.Panel AddPanel;
         private System.Windows.Forms.Label AgeLabel;
         private System.Windows.Forms.Label PositionLabel;
-        private System.Windows.Forms.TextBox NameTextBox;
+        public System.Windows.Forms.TextBox NameTextBox;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.Button OkButton;
-        private System.Windows.Forms.NumericUpDown AgeNumericUpDown;
-        private System.Windows.Forms.ComboBox PositionComboBox;
+        public System.Windows.Forms.NumericUpDown AgeNumericUpDown;
+        public System.Windows.Forms.ComboBox PositionComboBox;
     }
 }

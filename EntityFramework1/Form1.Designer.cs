@@ -42,7 +42,6 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -58,6 +57,7 @@
             this.Add.TabIndex = 1;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // Change
             // 
