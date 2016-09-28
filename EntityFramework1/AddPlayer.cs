@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace EntityFramework1
 {
-    public partial class Form1 : Form
+    public partial class AddPlayer : Form
     {
-        public Form1()
+        public AddPlayer()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
