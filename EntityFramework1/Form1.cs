@@ -69,5 +69,10 @@ namespace EntityFramework1
 
             return player;
         }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            db.Players.Remove(db.Players.Find(int.Parse(dataGridView1[0, dataGridView1.SelectedRows[0].Index].Value.ToString())));
+        }
     }
 }
